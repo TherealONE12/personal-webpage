@@ -1,8 +1,67 @@
+#background{
+    background: linear-gradient(125deg, rgb(21, 33, 250), rgb(255, 0, 200), rgb(144,238,144));
+
+}
+
+
+
 
 #maginheader{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     font-family: Poppins;
-    font-size: 40;
-    border-radius: 5;
-    text-decoration-color: rgb(21, 33, 250);
+    font-size: 40px;
+
+    height: 2cm;
+    width: 10cm;
+
+    border-radius: 5px;
+
+
+    color: rgb(21, 33, 250);
+    background-color: rgb(198, 225, 25);
+    
+    
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+
+    height: 0.75cm;
+    width: 40cm;
+
+    border-radius: 5px;
+
+
+    color: rgb(29, 194, 14);
+    background-color: rgb(255, 225, 255);
+
+    
+}
+
+.subtitle{
+
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: burlywood;
+}
+
+.normaltext{
+        font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cyan;
 }
