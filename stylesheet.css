@@ -60,8 +60,17 @@ header {
     color: burlywood;
 }
 
-.normaltext{
-        font-size: 15px;
+.normalText{
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: cyan;
+    color: rgb(45, 255, 4);
+
+    height: 0.75cm;
+    width: 40cm;
+
+    border-radius: 5px;
+}
+
+.spacer{
+    height: 250px;
 }
