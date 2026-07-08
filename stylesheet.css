@@ -61,7 +61,7 @@ header {
 }
 
 .normalText{
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(45, 255, 4);
 
@@ -73,4 +73,10 @@ header {
 
 .spacer{
     height: 250px;
+}
+
+.horizontalSpacer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
