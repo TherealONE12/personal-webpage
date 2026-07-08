@@ -1,83 +1,80 @@
-<html lang = en>
+<html lang = "en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta name ="description" content="A personal Webpage from Jakob">
+        
         <link rel="stylesheet" href="stylesheet.css">
-
         <title> My Cool site!</title>
     </head>    
 
-    <body id = "background">
-
+    <body>
         <header>
-            <div id = "maginheader">
+            <div id = "mainheader">
                 <p><i>Jakob's Website</i></p>
             </div>
             <div id = "navbar">
                 <nav>
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
-                    <a href="#Contact">Contact Me!</a>
+                    <a href="#contact">Contact Me!</a>
                 </nav>
             </div>
         </header>
 
+        <main>
+            <section id="about">
+                <h2 class = "subtitle">About Me</h2>
+                <div class = "normalText">
+                    <p>Hi! im a 17 year Old Guy from Austria and I go into a technical Colledge. I love programming in C and Python!</p>
+                    <p>These Are my Hackatime Stats!!</p>
+                    <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=27835&api_domain=hackatime.hackclub.com&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8&theme=ambient_gradient" alt="My Hackatime Stats">
+                </div>
+            </section>
 
-        <section id="about">
-            <div class = "subtitle">
-                <p>About Me</p>
-            </div>
-            <div class = "normalText">
-                <p>Hi! im a 17 year Old Guy from Austria and I go into a technical Colledge. I love programming in C and Python!</p>
-                <p>These Are my Hackatime Stats!!</p>
-                <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=27835&api_domain=hackatime.hackclub.com&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8&theme=ambient_gradient" alt="My Hackatime Stats">
-            </div>
-        </section>
-        
-        <div class = spacer></div>
+            <section id="projects">
+                <h2 class = "subtitle">Projekts</h2>
+                </div>
+                <div class = "normalText">
+                    <a href="https://github.com/TherealONE12">Here</a>
+                    you can See all of my Projekts!
+                    <p>Some of them are... </p>
+                        
 
-        <section id="projects">
-            <div class = "subtitle">
-                <p>Projekts</p>
-            </div>
-            <div class = "normalText">
-                <a href="https://github.com/TherealONE12">Here</a>
-                 you can See all of my Projekts!
-                <p>Some of them are... </p>
-                    
-
-                <div class = horizontalSpacer>
-                    <div>
+                    <div class = "project-grid">
                         <img src="./EZ-Admin.png" alt="An easy Linux Administration Tool">
-                        <a href="https://github.com/TherealONE12/EZ-Admin/tree/master">An easy Linux Administration Tool</a>
-                    </div>
-                    <div>
+                        <a class="project-card" href="https://github.com/TherealONE12/EZ-Admin/tree/master">An easy Linux Administration Tool</a> <p></p>
+                        <span>An easy Linux Administration Tool wich is able to keep your Kali Maschine Up-To-Date and clean!</span>
+                        </a>
+
                         <img src="./GetToSpaceV1.png" alt="A game in Pure C!">
-                        <a href="https://github.com/TherealONE12/GetToSpace/tree/master">A game in Pure C!</a>
-                    </div>
-                    <div>
+                        <a href="https://github.com/TherealONE12/GetToSpace/tree/master">A game in Pure C!</a><p></p>
+                        <span>A game I coded in Pure C using Raylib! This was an real challenge...</span>
+                        </a>
+
                         <img src="./GetToSpaceV2.png" alt="Recreation of GetToSpace using Godot (WIP)">
-                        <a href="https://github.com/TherealONE12/GetToSpace-NewBeginning">Recreation of GetToSpace using Godot (WIP)</a>
+                        <a href="https://github.com/TherealONE12/GetToSpace-NewBeginning">Recreation of GetToSpace using Godot (WIP)</a><p></p>
+                        <span>An Recreation of GetToSPace, as the old one is NOT good. Still WIP</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <div class = spacer></div>
-        <div class = spacer></div>
+            <section id="contact">
+                <div class = "subtitle">
+                    <p>Contact</p>
+                </div>
+                <div class = "normalText">
+                    <p>Im Active on</p>
+                    <p>Discord: jakcom</p>
+                    <p>Mail: <a href="mailto:jakob.jakcom@proton.me">jakob.jakcom@proton.me</a></p>  
+                </div>
+            </section>
+        </main>
 
+        <footer>
+            <p>&copy; 2026 Jakob</p>
+        </footer>
 
-        <section id="Contact">
-            <div class = "subtitle">
-                <p>Contact</p>
-            </div>
-            <div class = "normalText">
-                <p>Im Acitve on</p>
-                <p>Discord: jakcom</p>
-                <p>Mail: jakob.jakcom@proton.me</p>
-                
-            </div>
-        </section>
     </body>
-
 </html>

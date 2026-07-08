@@ -1,82 +1,167 @@
-#background{
-    background: linear-gradient(125deg, rgb(21, 33, 250), rgb(255, 0, 200), rgb(144,238,144));
-
+:root{
+    --bg: #0f1420;
+    --bg-alt: #161c2c;
+    --card: #1c2436;
+    --accent: #6ee7ff;
+    --accent-2: #b19dff;
+    --text: #e6e9f0;
+    --text-dim: #9aa3b2;
+    --border: #2a3348;
+    --radius: 10px;
+    --max-width: 900px;
 }
 
 
 
-
-#maginheader{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-family: Poppins;
-    font-size: 40px;
-
-    height: 2cm;
-    width: 10cm;
-
-    border-radius: 5px;
-
-
-    color: rgb(21, 33, 250);
-    background-color: rgb(198, 225, 25);
-    
-    
-    
+* {
+    box-sizing: border-box;
 }
 
-header {
+body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+
+main{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+
+header{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 2rem 1rem 1.5rem;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
 }
+
+
+#mainheader p{
+    margin: 0;
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+}
+
 
 #navbar{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-
-    height: 0.75cm;
-    width: 40cm;
-
-    border-radius: 5px;
+    gap: 1.5rem;
+}
 
 
-    color: rgb(29, 194, 14);
-    background-color: rgb(255, 225, 255);
+#navbar a{
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.4rem 0.2rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
 
-    
+
+#navbar a:hover{
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+
+section{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+section:last-of-type{
+    border-bottom: none;
 }
 
 .subtitle{
-
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: burlywood;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-2);
+    margin: 0 0 1rem;
 }
 
-.normalText{
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(45, 255, 4);
-
-    height: 0.75cm;
-    width: 40cm;
-
-    border-radius: 5px;
+.normalText p{
+    font-size: 1rem;
+    color: var(--text);
+    margin: 0 0 0.75rem;
 }
 
-.spacer{
-    height: 250px;
+.normalText a{
+    color: var(--accent);
 }
 
-.horizontalSpacer{
+.stats-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin-top: 0.5rem;
+}
+
+.projekt-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.projekt-card{
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.projekt-card:hover{
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+
+.projekt-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    background: var(--bg-alt);
+}
+
+.projekt-card span{
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+footer{
+    text-align: center;
+    padding: 1.5rem 1rem;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 480px){
+    header{
+        padding: 1.5rem 0.75rem 1rem;
+    }
+    section{
+        padding: 2rem 0;
+    }
 }
